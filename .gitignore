@@ -1,0 +1,18 @@
+# Raw data is fetched by scripts/download_data.py and never committed (size and licence)
+data/
+*.duckdb
+*.duckdb.wal
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Credentials
+kaggle.json
+.env
+
+# Tableau local files can embed data
+*.twbx
+*.hyper
