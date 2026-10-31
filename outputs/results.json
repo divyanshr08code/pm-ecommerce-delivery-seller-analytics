@@ -1,0 +1,1452 @@
+{
+ "rows_orders": {
+  "value": 99441.0,
+  "shown": "99,441",
+  "label": "Rows in orders"
+ },
+ "rows_items": {
+  "value": 112650.0,
+  "shown": "112,650",
+  "label": "Rows in items"
+ },
+ "rows_payments": {
+  "value": 103886.0,
+  "shown": "103,886",
+  "label": "Rows in payments"
+ },
+ "rows_reviews": {
+  "value": 99224.0,
+  "shown": "99,224",
+  "label": "Rows in reviews"
+ },
+ "rows_customers": {
+  "value": 99441.0,
+  "shown": "99,441",
+  "label": "Rows in customers"
+ },
+ "rows_sellers": {
+  "value": 3095.0,
+  "shown": "3,095",
+  "label": "Rows in sellers"
+ },
+ "rows_products": {
+  "value": 32951.0,
+  "shown": "32,951",
+  "label": "Rows in products"
+ },
+ "rows_translation": {
+  "value": 71.0,
+  "shown": "71",
+  "label": "Rows in translation"
+ },
+ "rows_geolocation": {
+  "value": 1000163.0,
+  "shown": "1,000,163",
+  "label": "Rows in geolocation"
+ },
+ "dq_no_items": {
+  "value": 775.0,
+  "shown": "775",
+  "label": "Orders with no item rows"
+ },
+ "dq_no_items_except": {
+  "value": 775.0,
+  "shown": "775",
+  "label": "Same count via EXCEPT"
+ },
+ "dq_no_review": {
+  "value": 768.0,
+  "shown": "768",
+  "label": "Orders with no review"
+ },
+ "dq_no_payment": {
+  "value": 1.0,
+  "shown": "1",
+  "label": "Orders with no payment"
+ },
+ "dq_extra_reviews": {
+  "value": 551.0,
+  "shown": "551",
+  "label": "Extra review rows beyond one per order"
+ },
+ "dq_shared_review_id": {
+  "value": 814.0,
+  "shown": "814",
+  "label": "Review rows sharing a review_id"
+ },
+ "dq_multi_item": {
+  "value": 9803.0,
+  "shown": "9,803",
+  "label": "Orders with more than one item line"
+ },
+ "dq_multi_seller": {
+  "value": 1278.0,
+  "shown": "1,278",
+  "label": "Orders with more than one seller"
+ },
+ "dq_deliv_no_date": {
+  "value": 8.0,
+  "shown": "8",
+  "label": "Delivered status, delivered date missing"
+ },
+ "dq_cancel_date": {
+  "value": 6.0,
+  "shown": "6",
+  "label": "Canceled status, delivered date present"
+ },
+ "dq_no_approval": {
+  "value": 14.0,
+  "shown": "14",
+  "label": "Delivered status, approval missing"
+ },
+ "dq_no_carrier": {
+  "value": 2.0,
+  "shown": "2",
+  "label": "Delivered status, carrier date missing"
+ },
+ "dq_neg_handoff": {
+  "value": 1359.0,
+  "shown": "1,359",
+  "label": "Carrier pickup before approval"
+ },
+ "dq_pick_purchase": {
+  "value": 166.0,
+  "shown": "166",
+  "label": "Carrier pickup before purchase"
+ },
+ "dq_neg_transit": {
+  "value": 23.0,
+  "shown": "23",
+  "label": "Delivered before carrier pickup"
+ },
+ "dq_no_category": {
+  "value": 610.0,
+  "shown": "610",
+  "label": "Products with no category"
+ },
+ "dq_geo_outside": {
+  "value": 42.0,
+  "shown": "42",
+  "label": "Geolocation rows outside Brazil box"
+ },
+ "dq_geo_extra": {
+  "value": 981148.0,
+  "shown": "981,148",
+  "label": "Geolocation rows beyond one per prefix"
+ },
+ "pop_status_delivered": {
+  "value": 96478.0,
+  "shown": "96,478",
+  "label": "Orders with status delivered"
+ },
+ "pop_not_delivered": {
+  "value": 2963.0,
+  "shown": "2,963",
+  "label": "Orders with any other status"
+ },
+ "orders": {
+  "value": 99441.0,
+  "shown": "99,441",
+  "label": "All orders"
+ },
+ "delivered": {
+  "value": 96470.0,
+  "shown": "96,470",
+  "label": "Delivered orders with a delivered date (breach denominator)"
+ },
+ "late": {
+  "value": 6534.0,
+  "shown": "6,534",
+  "label": "Late orders (by date)"
+ },
+ "breach_rate": {
+  "value": 0.06773090079817559,
+  "shown": "6.8%",
+  "label": "SLA-breach rate"
+ },
+ "promise_accuracy": {
+  "value": 0.9322690992018244,
+  "shown": "93.2%",
+  "label": "Promise accuracy"
+ },
+ "mean_days": {
+  "value": 12.558217098051713,
+  "shown": "12.6",
+  "label": "Mean purchase-to-delivery days"
+ },
+ "p50_days": {
+  "value": 10.217476851851853,
+  "shown": "10.2",
+  "label": "P50 purchase-to-delivery days"
+ },
+ "p90_days": {
+  "value": 23.096377314814816,
+  "shown": "23.1",
+  "label": "P90 purchase-to-delivery days"
+ },
+ "mean_promised": {
+  "value": 24.37273763864414,
+  "shown": "24.4",
+  "label": "Mean promised days"
+ },
+ "mean_approval": {
+  "value": 0.42823325471852597,
+  "shown": "0.43",
+  "label": "Mean approval lag days"
+ },
+ "mean_handoff": {
+  "value": 2.853391242647056,
+  "shown": "2.9",
+  "label": "Mean seller handoff days"
+ },
+ "p50_handoff": {
+  "value": 1.849050925925926,
+  "shown": "1.8",
+  "label": "P50 seller handoff days"
+ },
+ "p90_handoff": {
+  "value": 6.023055555555556,
+  "shown": "6.0",
+  "label": "P90 seller handoff days"
+ },
+ "mean_transit": {
+  "value": 9.333301671977685,
+  "shown": "9.3",
+  "label": "Mean carrier transit days"
+ },
+ "p50_transit": {
+  "value": 7.100312499999999,
+  "shown": "7.1",
+  "label": "P50 carrier transit days"
+ },
+ "p90_transit": {
+  "value": 18.901423611111113,
+  "shown": "18.9",
+  "label": "P90 carrier transit days"
+ },
+ "mean_days_late": {
+  "value": 10.620140801958984,
+  "shown": "10.6",
+  "label": "Mean days late, late orders only"
+ },
+ "p50_days_late": {
+  "value": 7.0,
+  "shown": "7.0",
+  "label": "P50 days late, late orders only"
+ },
+ "cancel_rate": {
+  "value": 0.012409368369183738,
+  "shown": "1.2%",
+  "label": "Cancellation rate (canceled or unavailable)"
+ },
+ "cancel_n": {
+  "value": 1234.0,
+  "shown": "1,234",
+  "label": "Canceled or unavailable orders"
+ },
+ "defect_rate": {
+  "value": 0.14840960971832545,
+  "shown": "14.8%",
+  "label": "Order defect proxy rate"
+ },
+ "cancel_value": {
+  "value": 269735.10999999975,
+  "shown": "R$ 269,735",
+  "label": "Payment value on canceled or unavailable orders"
+ },
+ "total_value": {
+  "value": 16008872.119999077,
+  "shown": "R$ 16,008,872",
+  "label": "Total payment value"
+ },
+ "late_value": {
+  "value": 1150865.6599999985,
+  "shown": "R$ 1,150,866",
+  "label": "Payment value on late delivered orders"
+ },
+ "cancel_value_share": {
+  "value": 0.016849101421894254,
+  "shown": "1.7%",
+  "label": "Canceled or unavailable value, share of total"
+ },
+ "late_value_share": {
+  "value": 0.07188924062690713,
+  "shown": "7.2%",
+  "label": "Late order value, share of total"
+ },
+ "br_2017_10": {
+  "value": 0.041759714158106295,
+  "shown": "4.2%",
+  "label": "Breach rate 2017-10"
+ },
+ "br_2017_11": {
+  "value": 0.12403951701427003,
+  "shown": "12.4%",
+  "label": "Breach rate 2017-11"
+ },
+ "br_2017_12": {
+  "value": 0.07455106112824234,
+  "shown": "7.5%",
+  "label": "Breach rate 2017-12"
+ },
+ "br_2018_01": {
+  "value": 0.05700947800254633,
+  "shown": "5.7%",
+  "label": "Breach rate 2018-01"
+ },
+ "br_2018_02": {
+  "value": 0.14126620900076278,
+  "shown": "14.1%",
+  "label": "Breach rate 2018-02"
+ },
+ "br_2018_03": {
+  "value": 0.18963301442239042,
+  "shown": "19.0%",
+  "label": "Breach rate 2018-03"
+ },
+ "br_2018_04": {
+  "value": 0.04501323918799647,
+  "shown": "4.5%",
+  "label": "Breach rate 2018-04"
+ },
+ "br_2018_06": {
+  "value": 0.011646981627296589,
+  "shown": "1.2%",
+  "label": "Breach rate 2018-06"
+ },
+ "br_2018_08": {
+  "value": 0.061880018894662256,
+  "shown": "6.2%",
+  "label": "Breach rate 2018-08"
+ },
+ "growth_2017_11": {
+  "value": 0.6290218095443749,
+  "shown": "62.9%",
+  "label": "Order growth Nov 2017 vs Oct"
+ },
+ "growth_2018_01": {
+  "value": 0.28133262823902694,
+  "shown": "28.1%",
+  "label": "Order growth Jan 2018 vs Dec"
+ },
+ "growth_2018_02": {
+  "value": -0.07442564314211031,
+  "shown": "-7.4%",
+  "label": "Order growth Feb 2018 vs Jan"
+ },
+ "growth_2018_03": {
+  "value": 0.07178953626634965,
+  "shown": "7.2%",
+  "label": "Order growth Mar 2018 vs Feb"
+ },
+ "transit_2018_01": {
+  "value": 10.483269291979074,
+  "shown": "10.5",
+  "label": "Mean transit days Jan 2018"
+ },
+ "transit_2018_02": {
+  "value": 13.3833217416023,
+  "shown": "13.4",
+  "label": "Mean transit days Feb 2018"
+ },
+ "transit_2018_03": {
+  "value": 12.967830918032462,
+  "shown": "13.0",
+  "label": "Mean transit days Mar 2018"
+ },
+ "promised_2018_06": {
+  "value": 28.408628608923884,
+  "shown": "28.4",
+  "label": "Mean promised days Jun 2018"
+ },
+ "promised_2018_08": {
+  "value": 15.82034325303102,
+  "shown": "15.8",
+  "label": "Mean promised days Aug 2018"
+ },
+ "mean_days_2018_06": {
+  "value": 9.239216293167374,
+  "shown": "9.2",
+  "label": "Mean delivery days Jun 2018"
+ },
+ "mean_days_2018_08": {
+  "value": 7.732779720458141,
+  "shown": "7.7",
+  "label": "Mean delivery days Aug 2018"
+ },
+ "promise_share_2018_08": {
+  "value": 0.6463104325699746,
+  "shown": "64.6%",
+  "label": "Promise share of late orders Aug 2018"
+ },
+ "wave_share_delivered": {
+  "value": 0.21608790297501815,
+  "shown": "21.6%",
+  "label": "Three wave months: share of delivered"
+ },
+ "wave_share_late": {
+  "value": 0.48331802877257424,
+  "shown": "48.3%",
+  "label": "Three wave months: share of late"
+ },
+ "wave_breach": {
+  "value": 0.15149189292909912,
+  "shown": "15.1%",
+  "label": "Breach rate inside wave months"
+ },
+ "non_wave_breach": {
+  "value": 0.044641912620332166,
+  "shown": "4.5%",
+  "label": "Breach rate outside wave months"
+ },
+ "bf_per_day": {
+  "value": 617.25,
+  "shown": "617",
+  "label": "Orders per day, Black Friday weekend 2017"
+ },
+ "bf_before_per_day": {
+  "value": 170.25,
+  "shown": "170",
+  "label": "Orders per day, four weeks before"
+ },
+ "bf_breach": {
+  "value": 0.18291165491497305,
+  "shown": "18.3%",
+  "label": "Breach rate, Black Friday weekend orders"
+ },
+ "bf_before_breach": {
+  "value": 0.07658643326039387,
+  "shown": "7.7%",
+  "label": "Breach rate, four weeks before"
+ },
+ "bf_transit": {
+  "value": 12.752032663755633,
+  "shown": "12.8",
+  "label": "Mean transit, Black Friday weekend orders"
+ },
+ "bf_before_transit": {
+  "value": 9.533699431173526,
+  "shown": "9.5",
+  "label": "Mean transit, four weeks before"
+ },
+ "bf_handoff": {
+  "value": 4.193992263468364,
+  "shown": "4.2",
+  "label": "Mean handoff, Black Friday weekend orders"
+ },
+ "bf_before_handoff": {
+  "value": 3.2963009689804705,
+  "shown": "3.3",
+  "label": "Mean handoff, four weeks before"
+ },
+ "anom_total": {
+  "value": 41.0,
+  "shown": "41",
+  "label": "Flagged state-months"
+ },
+ "anom_wave": {
+  "value": 33.0,
+  "shown": "33",
+  "label": "Flagged state-months inside the three wave months"
+ },
+ "anom_nov": {
+  "value": 13.0,
+  "shown": "13",
+  "label": "States flagged Nov 2017"
+ },
+ "anom_feb": {
+  "value": 7.0,
+  "shown": "7",
+  "label": "States flagged Feb 2018"
+ },
+ "anom_mar": {
+  "value": 13.0,
+  "shown": "13",
+  "label": "States flagged Mar 2018"
+ },
+ "anom_single": {
+  "value": 2.0,
+  "shown": "2",
+  "label": "Flags labelled single seller concentration"
+ },
+ "br_AL": {
+  "value": 0.2141057934508816,
+  "shown": "21.4%",
+  "label": "Breach rate AL"
+ },
+ "br_MA": {
+  "value": 0.17433751743375175,
+  "shown": "17.4%",
+  "label": "Breach rate MA"
+ },
+ "br_RJ": {
+  "value": 0.12105263157894737,
+  "shown": "12.1%",
+  "label": "Breach rate RJ"
+ },
+ "br_RS": {
+  "value": 0.06081586826347305,
+  "shown": "6.1%",
+  "label": "Breach rate RS"
+ },
+ "br_SP": {
+  "value": 0.044944930113103174,
+  "shown": "4.5%",
+  "label": "Breach rate SP"
+ },
+ "br_BA": {
+  "value": 0.12162162162162163,
+  "shown": "12.2%",
+  "label": "Breach rate BA"
+ },
+ "br_ES": {
+  "value": 0.10726817042606517,
+  "shown": "10.7%",
+  "label": "Breach rate ES"
+ },
+ "br_AC": {
+  "value": 0.0375,
+  "shown": "3.8%",
+  "label": "Breach rate AC"
+ },
+ "br_AM": {
+  "value": 0.027586206896551724,
+  "shown": "2.8%",
+  "label": "Breach rate AM"
+ },
+ "br_RR": {
+  "value": 0.12195121951219512,
+  "shown": "12.2%",
+  "label": "Breach rate RR"
+ },
+ "rj_delivered": {
+  "value": 12350.0,
+  "shown": "12,350",
+  "label": "RJ delivered orders"
+ },
+ "rj_late": {
+  "value": 1495.0,
+  "shown": "1,495",
+  "label": "RJ late orders"
+ },
+ "sp_late": {
+  "value": 1820.0,
+  "shown": "1,820",
+  "label": "SP late orders"
+ },
+ "rj_share_late": {
+  "value": 0.2288031833486379,
+  "shown": "22.9%",
+  "label": "RJ share of all late orders"
+ },
+ "rj_share_orders": {
+  "value": 0.12924246538148249,
+  "shown": "12.9%",
+  "label": "RJ share of all orders"
+ },
+ "sp_share_late": {
+  "value": 0.2785430058157331,
+  "shown": "27.9%",
+  "label": "SP share of all late orders"
+ },
+ "sp_share_orders": {
+  "value": 0.41980671956235355,
+  "shown": "42.0%",
+  "label": "SP share of all orders"
+ },
+ "al_delivered": {
+  "value": 397.0,
+  "shown": "397",
+  "label": "AL delivered orders"
+ },
+ "al_ci_low": {
+  "value": 0.1765949586460814,
+  "shown": "17.7%",
+  "label": "AL breach rate, Wilson low"
+ },
+ "al_ci_high": {
+  "value": 0.2570965544104476,
+  "shown": "25.7%",
+  "label": "AL breach rate, Wilson high"
+ },
+ "rr_delivered": {
+  "value": 41.0,
+  "shown": "41",
+  "label": "RR delivered orders"
+ },
+ "rr_ci_low": {
+  "value": 0.05323257997340823,
+  "shown": "5.3%",
+  "label": "RR breach rate, Wilson low"
+ },
+ "rr_ci_high": {
+  "value": 0.2554450764884486,
+  "shown": "25.5%",
+  "label": "RR breach rate, Wilson high"
+ },
+ "rj_mean": {
+  "value": 15.309437542172681,
+  "shown": "15.3",
+  "label": "RJ mean delivery days"
+ },
+ "rs_mean": {
+  "value": 15.300276192406896,
+  "shown": "15.3",
+  "label": "RS mean delivery days"
+ },
+ "rj_p90": {
+  "value": 29.08696643518519,
+  "shown": "29.1",
+  "label": "RJ P90 delivery days"
+ },
+ "rs_p90": {
+  "value": 25.883077546296295,
+  "shown": "25.9",
+  "label": "RS P90 delivery days"
+ },
+ "rj_promised": {
+  "value": 26.998218623481783,
+  "shown": "27.0",
+  "label": "RJ mean promised days"
+ },
+ "rs_promised": {
+  "value": 29.158869760479043,
+  "shown": "29.2",
+  "label": "RS mean promised days"
+ },
+ "rj_wave": {
+  "value": 0.3121597096188748,
+  "shown": "31.2%",
+  "label": "RJ breach in wave months"
+ },
+ "rj_nonwave": {
+  "value": 0.06618030224075039,
+  "shown": "6.6%",
+  "label": "RJ breach outside wave months"
+ },
+ "rs_nonwave": {
+  "value": 0.03529411764705882,
+  "shown": "3.5%",
+  "label": "RS breach outside wave months"
+ },
+ "rj_wave_share": {
+  "value": 0.5752508361204013,
+  "shown": "57.5%",
+  "label": "Share of RJ late orders in wave months"
+ },
+ "rj_rank": {
+  "value": 7.0,
+  "shown": "7",
+  "label": "RJ overall breach rank (states with 300+ delivered)"
+ },
+ "rj_nw_rank": {
+  "value": 12.0,
+  "shown": "12",
+  "label": "RJ non-wave breach rank"
+ },
+ "al_wave": {
+  "value": 0.3,
+  "shown": "30.0%",
+  "label": "AL breach in wave months"
+ },
+ "al_nonwave": {
+  "value": 0.19242902208201892,
+  "shown": "19.2%",
+  "label": "AL breach outside wave months"
+ },
+ "al_wave_share": {
+  "value": 0.2823529411764706,
+  "shown": "28.2%",
+  "label": "Share of AL late orders in wave months"
+ },
+ "al_nw_rank": {
+  "value": 1.0,
+  "shown": "1",
+  "label": "AL non-wave breach rank"
+ },
+ "lane_mar": {
+  "value": 0.42105263157894735,
+  "shown": "42.1%",
+  "label": "SP>RJ breach rate Mar 2018"
+ },
+ "lane_jun_promised": {
+  "value": 36.22787610619469,
+  "shown": "36.2",
+  "label": "SP>RJ mean promised days Jun 2018"
+ },
+ "lane_jun_actual": {
+  "value": 10.981330250327762,
+  "shown": "11.0",
+  "label": "SP>RJ mean actual days Jun 2018"
+ },
+ "lane_oct_promised": {
+  "value": 23.45205479452055,
+  "shown": "23.5",
+  "label": "SP>RJ mean promised days Oct 2017"
+ },
+ "lane_aug_promised": {
+  "value": 20.33256351039261,
+  "shown": "20.3",
+  "label": "SP>RJ mean promised days Aug 2018"
+ },
+ "attributable": {
+  "value": 6533.0,
+  "shown": "6,533",
+  "label": "Attributable late orders"
+ },
+ "execution_share": {
+  "value": 0.8865758457064136,
+  "shown": "88.7%",
+  "label": "Execution share of late orders"
+ },
+ "promise_share": {
+  "value": 0.1134241542935864,
+  "shown": "11.3%",
+  "label": "Promise share of late orders"
+ },
+ "carrier_share": {
+  "value": 0.7358028470840349,
+  "shown": "73.6%",
+  "label": "Carrier-only share"
+ },
+ "seller_share": {
+  "value": 0.10026021735802847,
+  "shown": "10.0%",
+  "label": "Seller-only share"
+ },
+ "either_share": {
+  "value": 0.024031838359099954,
+  "shown": "2.4%",
+  "label": "Either-fix share"
+ },
+ "compound_share": {
+  "value": 0.026480942905250267,
+  "shown": "2.6%",
+  "label": "Compound share"
+ },
+ "n_carrier": {
+  "value": 4807.0,
+  "shown": "4,807",
+  "label": "Late orders: carrier"
+ },
+ "n_promise": {
+  "value": 741.0,
+  "shown": "741",
+  "label": "Late orders: promise"
+ },
+ "n_seller": {
+  "value": 655.0,
+  "shown": "655",
+  "label": "Late orders: seller"
+ },
+ "n_compound": {
+  "value": 173.0,
+  "shown": "173",
+  "label": "Late orders: compound"
+ },
+ "n_either": {
+  "value": 157.0,
+  "shown": "157",
+  "label": "Late orders: either"
+ },
+ "n_unattributable": {
+  "value": 1.0,
+  "shown": "1",
+  "label": "Late orders: unattributable"
+ },
+ "carrier_promised": {
+  "value": 24.555023923444978,
+  "shown": "24.6",
+  "label": "Mean promised days, carrier-caused"
+ },
+ "promise_promised": {
+  "value": 15.978407557354926,
+  "shown": "16.0",
+  "label": "Mean promised days, promise-caused"
+ },
+ "late_transit": {
+  "value": 27.888372257867484,
+  "shown": "27.9",
+  "label": "Mean transit days, late orders"
+ },
+ "ontime_transit": {
+  "value": 7.985106459521,
+  "shown": "8.0",
+  "label": "Mean transit days, on-time orders"
+ },
+ "late_handoff": {
+  "value": 5.573975138767995,
+  "shown": "5.6",
+  "label": "Mean handoff days, late orders"
+ },
+ "ontime_handoff": {
+  "value": 2.6535144922310914,
+  "shown": "2.7",
+  "label": "Mean handoff days, on-time orders"
+ },
+ "late_promised": {
+  "value": 23.290327517600243,
+  "shown": "23.3",
+  "label": "Mean promised days, late orders"
+ },
+ "ontime_promised": {
+  "value": 24.45137653442448,
+  "shown": "24.5",
+  "label": "Mean promised days, on-time orders"
+ },
+ "late_dispatch": {
+  "value": 0.27762473217018674,
+  "shown": "27.8%",
+  "label": "Late orders where seller missed dispatch deadline"
+ },
+ "ontime_dispatch": {
+  "value": 0.07668786692759295,
+  "shown": "7.7%",
+  "label": "On-time orders where seller missed dispatch deadline"
+ },
+ "breach_missed": {
+  "value": 0.20695156695156694,
+  "shown": "20.7%",
+  "label": "Breach rate when dispatch deadline missed (order x seller)"
+ },
+ "breach_met": {
+  "value": 0.053125175492783734,
+  "shown": "5.3%",
+  "label": "Breach rate when dispatch deadline met (order x seller)"
+ },
+ "rj_carrier": {
+  "value": 0.7892976588628763,
+  "shown": "78.9%",
+  "label": "Carrier share of RJ late orders"
+ },
+ "sp_carrier": {
+  "value": 0.6054945054945055,
+  "shown": "60.5%",
+  "label": "Carrier share of SP late orders"
+ },
+ "sp_seller": {
+  "value": 0.18736263736263736,
+  "shown": "18.7%",
+  "label": "Seller share of SP late orders"
+ },
+ "al_promise": {
+  "value": 0.4588235294117647,
+  "shown": "45.9%",
+  "label": "Promise share of AL late orders"
+ },
+ "al_carrier": {
+  "value": 0.5058823529411764,
+  "shown": "50.6%",
+  "label": "Carrier share of AL late orders"
+ },
+ "ma_promise": {
+  "value": 0.424,
+  "shown": "42.4%",
+  "label": "Promise share of MA late orders"
+ },
+ "ma_carrier": {
+  "value": 0.472,
+  "shown": "47.2%",
+  "label": "Carrier share of MA late orders"
+ },
+ "rs_carrier": {
+  "value": 0.8830769230769231,
+  "shown": "88.3%",
+  "label": "Carrier share of RS late orders"
+ },
+ "states_dominant_carrier": {
+  "value": 27.0,
+  "shown": "27",
+  "label": "States where carrier is the dominant cause"
+ },
+ "states_total": {
+  "value": 27.0,
+  "shown": "27",
+  "label": "States in the root-cause table"
+ },
+ "buffer": {
+  "value": 11.814520540592408,
+  "shown": "11.8",
+  "label": "Mean buffer: promised minus actual days"
+ },
+ "p50_vs_promise": {
+  "value": -12.0,
+  "shown": "-12",
+  "label": "Median days versus promise (negative = early)"
+ },
+ "early_7": {
+  "value": 0.7892609101275008,
+  "shown": "78.9%",
+  "label": "Share delivered 7+ days early"
+ },
+ "early_14": {
+  "value": 0.4360422929408106,
+  "shown": "43.6%",
+  "label": "Share delivered 14+ days early"
+ },
+ "corr_promise": {
+  "value": 0.3837537553633866,
+  "shown": "0.38",
+  "label": "Correlation, promised vs actual days"
+ },
+ "corr_dist_promise": {
+  "value": 0.5164960275538786,
+  "shown": "0.52",
+  "label": "Correlation, distance vs promised days"
+ },
+ "corr_dist_actual": {
+  "value": 0.3936906548473019,
+  "shown": "0.39",
+  "label": "Correlation, distance vs actual days"
+ },
+ "shift_m7": {
+  "value": 0.21073908987249923,
+  "shown": "21.1%",
+  "label": "Breach rate if every estimate moved -7 days"
+ },
+ "shift_m3": {
+  "value": 0.11234580698662797,
+  "shown": "11.2%",
+  "label": "Breach rate if every estimate moved -3 days"
+ },
+ "shift_m1": {
+  "value": 0.08112366538820359,
+  "shown": "8.1%",
+  "label": "Breach rate if every estimate moved -1 days"
+ },
+ "shift_1": {
+  "value": 0.059179019384264536,
+  "shown": "5.9%",
+  "label": "Breach rate if every estimate moved +1 days"
+ },
+ "shift_3": {
+  "value": 0.0483466362599772,
+  "shown": "4.8%",
+  "label": "Breach rate if every estimate moved +3 days"
+ },
+ "shift_7": {
+  "value": 0.02966725406862237,
+  "shown": "3.0%",
+  "label": "Breach rate if every estimate moved +7 days"
+ },
+ "shift_14": {
+  "value": 0.014346428941639887,
+  "shown": "1.4%",
+  "label": "Breach rate if every estimate moved +14 days"
+ },
+ "scored_sellers": {
+  "value": 627.0,
+  "shown": "627",
+  "label": "Sellers with 30+ delivered orders"
+ },
+ "all_sellers": {
+  "value": 2970.0,
+  "shown": "2,970",
+  "label": "All sellers with a delivered order"
+ },
+ "worst_decile_n": {
+  "value": 63.0,
+  "shown": "63",
+  "label": "Sellers in the worst excess-late decile"
+ },
+ "worst_decile_delivered": {
+  "value": 0.2360405158793342,
+  "shown": "23.6%",
+  "label": "Worst decile: share of scored delivered"
+ },
+ "worst_decile_late": {
+  "value": 0.3837739288969918,
+  "shown": "38.4%",
+  "label": "Worst decile: share of scored late"
+ },
+ "worst_decile_breach": {
+  "value": 0.1092258198422582,
+  "shown": "10.9%",
+  "label": "Worst decile: breach rate"
+ },
+ "other_breach": {
+  "value": 0.05418837675350702,
+  "shown": "5.4%",
+  "label": "Other scored sellers: breach rate"
+ },
+ "worst_decile_excess": {
+  "value": 815.0245984602959,
+  "shown": "815",
+  "label": "Worst decile: excess late orders"
+ },
+ "tier_1_breach": {
+  "value": 0.07088778919764835,
+  "shown": "7.1%",
+  "label": "Breach rate, tier 500+ orders"
+ },
+ "tier_2_breach": {
+  "value": 0.06543723973825104,
+  "shown": "6.5%",
+  "label": "Breach rate, tier 100-499"
+ },
+ "tier_3_breach": {
+  "value": 0.06602651631942916,
+  "shown": "6.6%",
+  "label": "Breach rate, tier 30-99"
+ },
+ "tier_4_breach": {
+  "value": 0.06570155902004454,
+  "shown": "6.6%",
+  "label": "Breach rate, tier under 30"
+ },
+ "tier_1_miss": {
+  "value": 0.07312946749566468,
+  "shown": "7.3%",
+  "label": "Dispatch miss rate, tier 500+ orders"
+ },
+ "tier_4_miss": {
+  "value": 0.10473892600841377,
+  "shown": "10.5%",
+  "label": "Dispatch miss rate, tier under 30"
+ },
+ "tier_1_sellers": {
+  "value": 25.0,
+  "shown": "25",
+  "label": "Sellers in the 500+ tier"
+ },
+ "tier_4_sellers": {
+  "value": 2343.0,
+  "shown": "2,343",
+  "label": "Sellers in the under-30 tier"
+ },
+ "tier_4_share": {
+  "value": 0.1652574863767879,
+  "shown": "16.5%",
+  "label": "Under-30 tier share of delivered"
+ },
+ "big_seller_delivered": {
+  "value": 1772.0,
+  "shown": "1,772",
+  "label": "Largest excess-late seller: delivered"
+ },
+ "big_seller_breach": {
+  "value": 0.09706546275395034,
+  "shown": "9.7%",
+  "label": "Largest excess-late seller: breach rate"
+ },
+ "big_seller_rank": {
+  "value": 38.0,
+  "shown": "38",
+  "label": "Largest excess-late seller: rank by Wilson low"
+ },
+ "big_seller_excess": {
+  "value": 53.39080471521608,
+  "shown": "53",
+  "label": "Largest excess-late seller: excess late orders"
+ },
+ "worst_seller_delivered": {
+  "value": 73.0,
+  "shown": "73",
+  "label": "Worst-ranked seller: delivered"
+ },
+ "worst_seller_breach": {
+  "value": 0.3013698630136986,
+  "shown": "30.1%",
+  "label": "Worst-ranked seller: breach rate"
+ },
+ "worst_seller_miss": {
+  "value": 0.5342465753424658,
+  "shown": "53.4%",
+  "label": "Worst-ranked seller: dispatch miss rate"
+ },
+ "cat_office_defect": {
+  "value": 0.22545168892380205,
+  "shown": "22.5%",
+  "label": "office_furniture defect proxy"
+ },
+ "cat_office_ontime": {
+  "value": 0.18386816999132696,
+  "shown": "18.4%",
+  "label": "office_furniture defect proxy, on-time orders"
+ },
+ "cat_office_breach": {
+  "value": 0.08054226475279107,
+  "shown": "8.1%",
+  "label": "office_furniture breach rate"
+ },
+ "cat_office_orders": {
+  "value": 1273.0,
+  "shown": "1,273",
+  "label": "office_furniture orders"
+ },
+ "cat_audio_breach": {
+  "value": 0.11781609195402298,
+  "shown": "11.8%",
+  "label": "audio breach rate"
+ },
+ "cat_food_defect": {
+  "value": 0.06167400881057269,
+  "shown": "6.2%",
+  "label": "food_drink defect proxy"
+ },
+ "simpson_sp_all": {
+  "value": 12.363972164983156,
+  "shown": "12.36",
+  "label": "SP sellers: mean delivery days, all"
+ },
+ "simpson_ot_all": {
+  "value": 13.031213608265718,
+  "shown": "13.03",
+  "label": "Other sellers: mean delivery days, all"
+ },
+ "simpson_sp_inter": {
+  "value": 15.967848180377668,
+  "shown": "15.97",
+  "label": "SP sellers: interstate"
+ },
+ "simpson_ot_inter": {
+  "value": 13.86968507969579,
+  "shown": "13.87",
+  "label": "Other sellers: interstate"
+ },
+ "simpson_sp_same": {
+  "value": 7.945757652782931,
+  "shown": "7.95",
+  "label": "SP sellers: same state"
+ },
+ "simpson_ot_same": {
+  "value": 7.935301812649358,
+  "shown": "7.94",
+  "label": "Other sellers: same state"
+ },
+ "simpson_sp_same_share": {
+  "value": 0.4492439973093908,
+  "shown": "44.9%",
+  "label": "SP sellers: same-state share of orders"
+ },
+ "simpson_ot_same_share": {
+  "value": 0.1412904144708731,
+  "shown": "14.1%",
+  "label": "Other sellers: same-state share of orders"
+ },
+ "review_ontime": {
+  "value": 4.290386055923885,
+  "shown": "4.29",
+  "label": "Mean review, on time"
+ },
+ "review_1_3": {
+  "value": 3.291036717062635,
+  "shown": "3.29",
+  "label": "Mean review, 1-3 days late"
+ },
+ "review_4_7": {
+  "value": 2.102974828375286,
+  "shown": "2.10",
+  "label": "Mean review, 4-7 days late"
+ },
+ "review_8p": {
+  "value": 1.6961524631427545,
+  "shown": "1.70",
+  "label": "Mean review, 8+ days late"
+ },
+ "low_ontime": {
+  "value": 0.09267354628087161,
+  "shown": "9.3%",
+  "label": "Low-review rate, on time"
+ },
+ "low_1_3": {
+  "value": 0.3212742980561555,
+  "shown": "32.1%",
+  "label": "Low-review rate, 1-3 days late"
+ },
+ "low_4_7": {
+  "value": 0.6767734553775744,
+  "shown": "67.7%",
+  "label": "Low-review rate, 4-7 days late"
+ },
+ "low_8p": {
+  "value": 0.7928802588996764,
+  "shown": "79.3%",
+  "label": "Low-review rate, 8+ days late"
+ },
+ "low_total": {
+  "value": 12272.0,
+  "shown": "12,272",
+  "label": "Low reviews on delivered orders"
+ },
+ "low_late_n": {
+  "value": 3983.0,
+  "shown": "3,983",
+  "label": "Low reviews on late orders"
+ },
+ "low_ontime_n": {
+  "value": 8289.0,
+  "shown": "8,289",
+  "label": "Low reviews on on-time orders"
+ },
+ "share_low_late": {
+  "value": 0.3245599739243807,
+  "shown": "32.5%",
+  "label": "Share of low reviews on late orders"
+ },
+ "share_low_ontime": {
+  "value": 0.6754400260756193,
+  "shown": "67.5%",
+  "label": "Share of low reviews on on-time orders"
+ },
+ "share_reviewed_late": {
+  "value": 0.06659083319418935,
+  "shown": "6.7%",
+  "label": "Share of reviewed delivered orders that were late"
+ },
+ "low_rate_late": {
+  "value": 0.6241968343519825,
+  "shown": "62.4%",
+  "label": "Low-review rate, late orders"
+ },
+ "low_rate_ontime": {
+  "value": 0.09267354628087161,
+  "shown": "9.3%",
+  "label": "Low-review rate, on-time orders"
+ },
+ "relative_risk": {
+  "value": 6.735437019537263,
+  "shown": "6.7",
+  "label": "Relative risk of a low review, late vs on time"
+ },
+ "low_single": {
+  "value": 0.07545362965910928,
+  "shown": "7.5%",
+  "label": "On-time low-review rate, single item"
+ },
+ "low_multi_item": {
+  "value": 0.21009374598690125,
+  "shown": "21.0%",
+  "label": "On-time low-review rate, multi-item one seller"
+ },
+ "low_multi_seller": {
+  "value": 0.4691753402722178,
+  "shown": "46.9%",
+  "label": "On-time low-review rate, multi-seller"
+ },
+ "share_multi_seller_ot": {
+  "value": 0.013964200664110103,
+  "shown": "1.4%",
+  "label": "Multi-seller share of on-time reviewed orders"
+ },
+ "gap_within_state": {
+  "value": 2.0053566608671276,
+  "shown": "2.01",
+  "label": "Review gap on-time minus late, weighted within state"
+ },
+ "gap_states": {
+  "value": 21.0,
+  "shown": "21",
+  "label": "States compared within-state"
+ },
+ "gap_states_lower": {
+  "value": 21.0,
+  "shown": "21",
+  "label": "States where late orders score lower"
+ },
+ "rb_timestamp": {
+  "value": 0.08112366538820359,
+  "shown": "8.1%",
+  "label": "Breach rate by timestamp"
+ },
+ "rb_top5": {
+  "value": 5.0,
+  "shown": "5",
+  "label": "Top-5 states in common, date vs timestamp"
+ },
+ "rb_strict": {
+  "value": 0.08422006577942509,
+  "shown": "8.4%",
+  "label": "Breach rate counting open orders past promise"
+ },
+ "rb_open": {
+  "value": 1737.0,
+  "shown": "1,737",
+  "label": "Open orders past promise"
+ },
+ "rb_p50": {
+  "value": 0.9603551201591918,
+  "shown": "96.0%",
+  "label": "Execution share, transit norm P50"
+ },
+ "rb_p90": {
+  "value": 0.5221184754324201,
+  "shown": "52.2%",
+  "label": "Execution share, transit norm P90"
+ },
+ "rb_month": {
+  "value": 0.6712077146793204,
+  "shown": "67.1%",
+  "label": "Execution share, same-month norm"
+ },
+ "rb_lowvol": {
+  "value": 0.8921980632194408,
+  "shown": "89.2%",
+  "label": "Execution share, sellers under 30 dropped"
+ },
+ "rb_multi": {
+  "value": 0.8865030674846626,
+  "shown": "88.7%",
+  "label": "Execution share, multi-seller dropped"
+ },
+ "rb_nowave": {
+  "value": 0.8465185185185186,
+  "shown": "84.7%",
+  "label": "Execution share, wave months dropped"
+ },
+ "rb_simple_p50": {
+  "value": 0.033375314861460954,
+  "shown": "3.3%",
+  "label": "Late orders with promise below lane median"
+ },
+ "rb_simple_p75": {
+  "value": 0.1369647355163728,
+  "shown": "13.7%",
+  "label": "Late orders with promise below lane P75"
+ },
+ "rb_top10": {
+  "value": 2.0,
+  "shown": "2",
+  "label": "Worst-10 sellers in common, min 30 vs min 100"
+ },
+ "rb_defect": {
+  "value": 0.14922015140920009,
+  "shown": "14.9%",
+  "label": "Defect rate, reviewed orders only"
+ },
+ "rb_review": {
+  "value": 0.6755015495025282,
+  "shown": "67.6%",
+  "label": "Share of low reviews on-time, earliest review used"
+ },
+ "two_way_a": {
+  "value": 0.06773090079817559,
+  "shown": "6.8%",
+  "label": "Breach rate, method A (fact table)"
+ },
+ "two_way_b": {
+  "value": 0.06773090079817559,
+  "shown": "6.8%",
+  "label": "Breach rate, method B (raw EXCEPT)"
+ },
+ "dash_orders": {
+  "value": 99092.0,
+  "shown": "99,092",
+  "label": "Tile: orders"
+ },
+ "dash_delivered": {
+  "value": 96203.0,
+  "shown": "96,203",
+  "label": "Delivered in the dashboard window"
+ },
+ "dash_late": {
+  "value": 6531.0,
+  "shown": "6,531",
+  "label": "Late in the dashboard window"
+ },
+ "dash_accuracy": {
+  "value": 0.932112304190098,
+  "shown": "93.2%",
+  "label": "Tile: promise accuracy"
+ },
+ "dash_mean_days": {
+  "value": 12.538460850026421,
+  "shown": "12.5",
+  "label": "Tile: average delivery days"
+ },
+ "dash_defect": {
+  "value": 0.14772130949017076,
+  "shown": "14.8%",
+  "label": "Tile: defect proxy"
+ },
+ "dash_rows": {
+  "value": 11807.0,
+  "shown": "11,807",
+  "label": "Rows in dash_fact"
+ },
+ "pilot_nonwave": {
+  "value": 0.07230679156908665,
+  "shown": "7.2%",
+  "label": "RJ+BA+ES non-wave breach baseline"
+ },
+ "pilot_volume": {
+  "value": 1084.8,
+  "shown": "1,085",
+  "label": "RJ+BA+ES delivered per month, Apr-Aug 2018"
+ },
+ "pilot_target": {
+  "value": 0.04844555035128806,
+  "shown": "4.8%",
+  "label": "RJ+BA+ES target rate at 33% reduction"
+ },
+ "pilot_n": {
+  "value": 1559.0,
+  "shown": "1,559",
+  "label": "RJ+BA+ES orders per arm at 33% reduction"
+ },
+ "pilot_total": {
+  "value": 3118.0,
+  "shown": "3,118",
+  "label": "RJ+BA+ES orders in total at 33% reduction"
+ },
+ "pilot_months": {
+  "value": 2.8742625368731565,
+  "shown": "2.9",
+  "label": "RJ+BA+ES months needed at 33% reduction"
+ },
+ "pilot_n25": {
+  "value": 2840.0,
+  "shown": "2,840",
+  "label": "RJ+BA+ES orders per arm at 25% reduction"
+ },
+ "pilot_months25": {
+  "value": 5.235988200589971,
+  "shown": "5.2",
+  "label": "RJ+BA+ES months needed at 25% reduction"
+ },
+ "pilot_rj_volume": {
+  "value": 749.8,
+  "shown": "750",
+  "label": "RJ delivered per month, Apr-Aug 2018"
+ },
+ "pilot_rj_base": {
+  "value": 0.06645735217163788,
+  "shown": "6.6%",
+  "label": "RJ non-wave breach baseline"
+ },
+ "pilot_rj_months": {
+  "value": 4.547879434515871,
+  "shown": "4.5",
+  "label": "RJ months needed at 33% reduction"
+ },
+ "pilot_al_volume": {
+  "value": 21.6,
+  "shown": "22",
+  "label": "AL delivered per month, Apr-Aug 2018"
+ },
+ "pilot_al_months": {
+  "value": 48.05555555555555,
+  "shown": "48.1",
+  "label": "AL months needed at 33% reduction"
+ },
+ "sop_sellers": {
+  "value": 91.0,
+  "shown": "91",
+  "label": "Scored sellers missing dispatch on 20%+ of orders"
+ },
+ "sop_orders": {
+  "value": 9935.0,
+  "shown": "9,935",
+  "label": "Orders of those sellers"
+ },
+ "sop_breach": {
+  "value": 0.09854051333668848,
+  "shown": "9.9%",
+  "label": "Breach rate of those sellers"
+ },
+ "sop_others": {
+  "value": 0.06283467202141901,
+  "shown": "6.3%",
+  "label": "Breach rate of other scored sellers"
+ }
+}

@@ -1,0 +1,16 @@
+test,metric,base_value,variant_value,how_to_read
+Breach by timestamp instead of date,breach_rate,0.06773090079817559,0.08112366538820359,Rate rises because same-day deliveries count as late; ordering is tested next
+Top-5 worst states: date vs timestamp,states in common (of 5),5.0,5.0,Worst-state list is mostly unchanged if 4 or 5
+Count open orders past promise as late (survivorship),breach_rate,0.06773090079817559,0.08422006577942509,"Upper bound: headline understates failure, still a minority of orders"
+Open orders past promise,orders,0.0,1737.0,Context for the row above
+Execution share: transit norm P50,execution_share,0.8865758457064136,0.9603551201591918,Execution remains the majority if above 0.5
+Execution share: transit norm P90,execution_share,0.8865758457064136,0.5221184754324201,Execution remains the majority if above 0.5
+Execution share: transit norm from the same month,execution_share,0.8865758457064136,0.6712077146793204,Strongest challenge: a slow month raises its own norm
+Execution share: drop sellers under 30 orders,execution_share,0.8865758457064136,0.8921980632194408,Execution remains the majority if above 0.5
+Execution share: drop multi-seller orders,execution_share,0.8865758457064136,0.8865030674846626,Execution remains the majority if above 0.5
+Execution share: drop the three wave months,execution_share,0.8865758457064136,0.8465185185185186,Execution remains the majority if above 0.5
+Late orders with promise below lane median total,share_of_late,,0.033375314861460954,Independent promise test: a low share supports execution
+Late orders with promise below lane P75 total,share_of_late,,0.1369647355163728,Independent promise test: a low share supports execution
+Worst-10 sellers: min 30 vs min 100 orders,sellers in common (of 10),10.0,2.0,Low overlap means the bottom list depends on the volume filter
+Defect rate: reviewed orders only as denominator,defect_rate,0.14840960971832545,0.14922015140920009,Small movement means missing reviews barely affect the proxy
+Share of low reviews on on-time orders: earliest review instead of latest,share_low_reviews_on_time,0.6754400260756193,0.6755015495025282,Choice of review for duplicates does not change the finding if close

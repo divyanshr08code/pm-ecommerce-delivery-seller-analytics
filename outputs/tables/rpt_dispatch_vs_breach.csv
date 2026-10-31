@@ -1,0 +1,4 @@
+dispatch_outcome,delivered,late,breach_rate
+met dispatch deadline,89035,4730,0.053125175492783734
+missed dispatch deadline,8775,1816,0.20695156695156694
+no pickup date,1,1,1.0

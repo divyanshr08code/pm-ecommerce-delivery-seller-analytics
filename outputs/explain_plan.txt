@@ -1,0 +1,35 @@
+
+SELECT customer_state, purchase_month, COUNT(*) FILTER (is_delivered) AS delivered
+FROM fct_orders
+WHERE purchase_month BETWEEN DATE '2017-01-01' AND DATE '2018-08-01'
+GROUP BY customer_state, purchase_month
+
+╭─ Projection ──────────────────────────────────────────────────────────────────────╮
+│ Projections:                                                                      │
+│ __internal_decompress_string(#0), #1, #2                                          │
+│ ~611 rows                                                                         │
+╰─────────────────────────────────────────┬─────────────────────────────────────────╯
+╭─ Hash Group By ─────────────────────────┴─────────────────────────────────────────╮
+│ Groups: #0, #1                                                                    │
+│ Aggregates:                                                                       │
+│ count_star() FILTER (WHERE #0) Filter: #0                                         │
+│ ~611 rows                                                                         │
+╰─────────────────────────────────────────┬─────────────────────────────────────────╯
+╭─ Projection ────────────────────────────┴─────────────────────────────────────────╮
+│ Projections: customer_state, purchase_month, is_delivered                         │
+│ ~19,888 rows                                                                      │
+╰─────────────────────────────────────────┬─────────────────────────────────────────╯
+╭─ Projection ────────────────────────────┴─────────────────────────────────────────╮
+│ Projections:                                                                      │
+│ #0, __internal_compress_string_uinteger(#1), #2                                   │
+│ ~19,888 rows                                                                      │
+╰─────────────────────────────────────────┬─────────────────────────────────────────╯
+╭─ Seq Scan ──────────────────────────────┴─────────────────────────────────────────╮
+│ Table: olist.main.fct_orders                                                      │
+│ Type: Sequential Scan                                                             │
+│ Projections: purchase_month, customer_state, is_delivered                         │
+│ Filters:                                                                          │
+│ (purchase_month >= '2017-01-01'::DATE) AND (purchase_month <= '2018-08-01'::DATE) │
+│ ~19,888 rows                                                                      │
+╰───────────────────────────────────────────────────────────────────────────────────╯
+

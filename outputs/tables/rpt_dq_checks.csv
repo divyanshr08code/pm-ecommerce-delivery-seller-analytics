@@ -1,0 +1,22 @@
+check_name,affected_rows,treatment
+duplicate order_id rows,0,None found means no action; fct_orders asserts uniqueness
+orders with no item rows (anti join),775,Kept in order counts; seller and category are NULL
+orders with no review (anti join),768,"Kept; review_score NULL, so they cannot trigger the low-review defect"
+orders with no payment row (anti join),1,Kept; payment_value NULL
+extra review rows beyond one per order,551,Latest answered review kept per order
+review_id values shared by more than one row,814,review_id is not a key; never used as a join key
+orders with more than one item line,9803,Collapsed to one row per order in stg_order_items
+orders with more than one seller,1278,Primary seller = highest-value line; seller scorecard counts the order for each seller
+status delivered but delivered date missing,8,Excluded from delivered population: lateness cannot be measured
+status canceled but delivered date present,6,Treated as canceled; excluded from delivered population
+"status delivered, approval timestamp missing",14,Kept for breach metrics; approval lag and seller handoff NULL
+"status delivered, carrier date missing",2,Kept for breach metrics; handoff and transit NULL; unattributable in root cause
+delivered before purchase,0,None found means no action; assertion in 03
+approved before purchase,0,None found means no action
+carrier pickup before approval (negative handoff),1359,Kept for breach metrics; seller handoff duration NULL
+carrier pickup before purchase,166,Subset of negative handoff; same treatment
+delivered to customer before carrier pickup (negative transit),23,Kept for breach metrics; transit NULL; unattributable in root cause
+estimated date with a non-midnight time,0,"Zero rows: estimates are date-only, hence date-level lateness (see METRICS.md)"
+products with no category,610,Labelled unknown
+geolocation rows outside Brazil bounding box,42,Dropped before taking the median per prefix
+geolocation rows beyond one per zip prefix,981148,Collapsed to one median point per prefix

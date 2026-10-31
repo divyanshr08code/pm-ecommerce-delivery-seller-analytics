@@ -1,0 +1,9 @@
+purchase_month,flagged_states,states,late_orders_in_flagged
+2017-07-01,1,PE,13
+2017-08-01,1,RS,22
+2017-09-01,3,"DF, BA, PA",40
+2017-10-01,2,"MA, PR",18
+2017-11-01,13,"ES, CE, RJ, GO, PR, SC, MG, MA, MT, SP, RS, DF, PA",804
+2018-02-01,7,"MS, SC, CE, GO, MG, SP, RJ",688
+2018-03-01,13,"PA, ES, MG, PE, MS, BA, MT, DF, CE, PR, SP, RS, GO",905
+2018-04-01,1,RN,10
