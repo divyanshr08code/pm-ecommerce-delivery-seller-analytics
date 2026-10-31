@@ -1,0 +1,35 @@
+# Decisions
+
+Each entry: what was decided, why, and what else was considered.
+
+| # | Decision | Why | Alternatives considered |
+|---|---|---|---|
+| 1 | Late is measured by calendar date, not timestamp | Every estimate is stored at exactly midnight, so a timestamp test calls any delivery on the promised day late | Timestamp comparison; kept as a robustness test |
+| 2 | Breach denominator = status delivered with a delivered date | Lateness needs a delivered date | Include open orders; reported as an upper bound in `rpt_robustness` |
+| 3 | Open orders past promise are not counted in the headline | Their final outcome is unknown, and the dataset has no later snapshot | Count all as late; shown as the strict variant |
+| 4 | Months are purchase months | Ties lateness to when the demand and the promise were made | Delivery month; it would move wave lateness into later months |
+| 5 | Trend window Jan 2017 to Aug 2018 | Earlier and later months have very few orders | All months; tiny months make meaningless rates |
+| 6 | Latest answered review per order | It is the customer's final view; order grain must stay one row | Earliest review; tested, finding unchanged |
+| 7 | Primary seller and category = highest-value line of the order | One order row needs one label; the value-carrying line is the fairest | First line; split credit (used instead on seller scorecard grain) |
+| 8 | Seller scorecard grain = order x seller | A two-seller order should count once for each seller | Item grain would over-count multi-item orders |
+| 9 | Negative durations become NULL, and the order stays | Bad timestamp order says nothing about speed, but the delivered and estimated dates are still valid | Delete the orders; would alter breach counts without reason |
+| 10 | Attribution by counterfactual test on each late order | It answers "what would have saved this order?" directly, and every order gets one cause | Compare stage averages only; kept as a simpler second view |
+| 11 | "Normal" carrier transit = lane P75 | P50 would call half of all orders abnormal by construction; P90 tolerates a lot. P75 is a middle choice and the result is shown for all three | P50, P90, same-month norm: all in `rpt_robustness` |
+| 12 | Seller deadline = `shipping_limit_date`, latest per order | The seller's own contractual-looking deadline is the fairest test; latest is lenient for multi-seller orders | Earliest deadline; would blame sellers more |
+| 13 | Minimum 30 delivered orders for seller ranking, ranked by Wilson lower bound | Below 30 a rate is mostly noise; Wilson ranks by what the data can support | Raw rate ranking rewards tiny samples; min 100 tested, changes the list a lot |
+| 14 | Anomaly baseline = prior 6 eligible months, excluding current; min 30 orders; at least 4 prior months; stddev floor 0.01 | The current month must not inflate its own baseline; the floor stops a calm state producing a huge z from a tiny rise | Whole-history baseline ignores trend; the 6-row window can span a gap when a month is below 30 orders, noted as a limitation |
+| 15 | Wave month = national breach rate of 12% or more | Separates the three visible peaks from the next highest month in `rpt_kpi_monthly`. Chosen after seeing the data, so it describes the past and is not a forecasting rule | Statistical changepoint method; more complex than this question needs |
+| 16 | Anomaly driver labels use fixed rules | Makes the description repeatable. Labels describe what moved, and do not prove cause | Manual reading of each row |
+| 17 | Wilson interval written as a SQL macro, checked against scipy in tests | Ranking inside SQL needs it in SQL; a test proves it is right | Python-only calculation would pull ranking out of SQL |
+| 18 | `is_defect_proxy` denominator = all orders | A missing review is not a defect | Reviewed orders only; tested, almost no change |
+| 19 | Pilot segment = customers in RJ, BA and ES | RJ alone needs longer to reach adequate sample; AL has the worst rate but far too little volume | RJ alone, lane SP>RJ alone, AL: all sized in `rpt_pilot_sizing` |
+| 20 | Dashboard extract holds additive counts only | A BI tool can filter and re-aggregate counts correctly; percentiles cannot be re-aggregated | Order-level extract would leak ids and be slow |
+| 21 | Code under MIT; derived data under CC BY-NC-SA 4.0 | The dataset licence applies to derived tables; the SQL and Python are original work | One licence for all; would misstate one or the other |
+| 22 | "Olist" appears only in the dataset credit and file names | The licence requires attribution | Removing it would break the licence |
+
+## Performance note
+
+`outputs/explain_plan.txt` is a real `EXPLAIN` of the state-month query. It shows the month filter
+applied in the scan of `fct_orders`, below the aggregate, and only three columns projected. Filtering
+at the scan means the aggregate never sees rows outside the window. This table has about 100k rows
+so the saving is small here, but the same habit matters on a billion-row warehouse table.
