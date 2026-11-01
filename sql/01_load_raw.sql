@@ -1,6 +1,6 @@
 -- 01_load_raw.sql
 -- Question : Did every raw CSV load completely, and how big is each table?
--- Grain    : raw_* = one row per CSV row (grain differs by table; see docs/LEARN.md section 3).
+-- Grain    : raw_* = one row per CSV row (grain differs by table).
 --            rpt_row_counts = one row per table.
 -- Metrics  : row counts only.
 -- Why sample_size=-1: DuckDB scans the whole file to infer types instead of guessing

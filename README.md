@@ -27,11 +27,9 @@ Every number traces to [docs/RESULTS.md](docs/RESULTS.md).
 
 ## Recommendations
 
-1. Pilot in-transit exception alerts in RJ, BA and ES ([design and sample size](docs/PILOT_PLAN.md)).
+1. Pilot in-transit exception alerts in RJ, BA and ES (sample-size inputs in `sql/10_pilot_baseline.sql`).
 2. Build a peak-and-disruption playbook before the next Black Friday.
 3. Fix promises on the lanes where they are the problem (AL, MA), avoid national padding, and apply a dispatch SOP to repeat-offender sellers.
-
-Read the one-page [stakeholder memo](docs/MEMO.md).
 
 ## Dashboard
 
@@ -80,4 +78,4 @@ bash run_all.sh
 
 ## Going deeper
 
-[Learning guide](docs/LEARN.md) · [Metrics](docs/METRICS.md) · [Data quality](docs/DATA_QUALITY.md) · [Decisions](docs/DECISIONS.md) · [SQL skills](docs/SKILLS_CHECKLIST.md)
+[Metrics](docs/METRICS.md) · [Data quality](docs/DATA_QUALITY.md) · [Decisions](docs/DECISIONS.md) · [SQL skills](docs/SKILLS_CHECKLIST.md)

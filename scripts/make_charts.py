@@ -1,4 +1,4 @@
-"""Draw the static charts used in the README and memo, from outputs/tables and the database.
+"""Draw the static charts used in the README, from outputs/tables and the database.
 
 Colours follow a fixed role: blue = main series, orange = comparison, aqua and yellow = further
 categories. One axis per chart. Thin marks, recessive grid, selective labels.

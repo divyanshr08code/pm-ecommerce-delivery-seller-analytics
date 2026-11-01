@@ -13,7 +13,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-DOCS = ["README.md", "docs/MEMO.md", "docs/PILOT_PLAN.md", "docs/LEARN.md", "docs/METRICS.md",
+DOCS = ["README.md", "docs/METRICS.md",
         "docs/DATA_QUALITY.md", "dashboard/BUILD_GUIDE.md"]
 # Other notes in docs/ are checked when present, except these, which do not quote results.
 NOT_RESULTS = {"RESULTS.md", "DECISIONS.md", "SKILLS_CHECKLIST.md", "PLAN.md", "PROGRESS.md", "NEEDS_FROM_ME.md"}
