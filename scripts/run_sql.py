@@ -23,7 +23,7 @@ def main() -> int:
     con = duckdb.connect(str(DB))
     for path in sorted((ROOT / "sql").glob("[0-9][0-9]_*.sql")):
         print(f"Running {path.name}")
-        # The SQL uses relative paths such as data/raw/x.csv, so run_all.sh runs from the root.
+        # The SQL uses relative paths such as data/raw/x.csv, so run this script from the project root.
         con.execute(path.read_text(encoding="utf-8")).fetchall()
 
     names = [r[0] for r in con.sql(
