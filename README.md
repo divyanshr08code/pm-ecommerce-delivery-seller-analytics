@@ -55,10 +55,14 @@ SQL (DuckDB) is the primary deliverable. Python is used only for loading, charts
 
 ## Reproduce
 
-Needs Python `3.12` and Git Bash or any bash shell. Downloads the data, rebuilds everything, runs all tests and audits the numbers in the docs:
+Needs Python `3.12`. Run from the project folder. This downloads the data, rebuilds everything, runs all tests and audits the numbers in the docs:
 
 ```bash
-bash run_all.sh
+pip install duckdb==2.0.0 matplotlib==3.11.2 numpy==2.5.4 pandas==3.1.0 pytest==9.2.0 scipy==1.18.1
+```
+
+```bash
+python scripts/download_data.py && python scripts/run_sql.py && python scripts/explain_plan.py && python scripts/build_results.py && python scripts/make_charts.py && python -m pytest -q tests && python scripts/audit_docs.py
 ```
 
 ## Data and licences
