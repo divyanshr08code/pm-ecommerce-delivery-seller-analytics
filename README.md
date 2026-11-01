@@ -35,7 +35,9 @@ Read the one-page [stakeholder memo](docs/MEMO.md).
 
 ## Dashboard
 
-**Not yet built.** The Tableau Public workbook is a manual step: extracts and a [step-by-step guide](dashboard/BUILD_GUIDE.md) are ready, and no live link exists yet. The images above are static charts from `scripts/make_charts.py`.
+A Tableau dashboard with tiles, trend, state map, cause breakdown, seller scorecard and month, state and category filters. It runs locally and is **not published, so there is no live link**. `scripts/build_tableau_workbook.py` generates the workbook from the extracts ([guide](dashboard/BUILD_GUIDE.md)).
+
+![Tableau dashboard](dashboard/dashboard.png)
 
 ## Approach
 
@@ -74,7 +76,7 @@ bash run_all.sh
 - The defect measure is a proxy built from cancellations and low reviews. Review results are associations.
 - No inventory, promotion or refund data, so inventory turns were not analysed and revenue leakage is limited to value at risk: R$ 269,735 on canceled or unavailable orders, and R$ 1,150,866 on late orders.
 - The pilot is a design only, and its 33% target is a planning assumption.
-- The Tableau formulas in the guide have not been tested in Tableau.
+- The dashboard is a local workbook, not published. It shows the monthly breach rate; the rolling rate is only in `rpt_kpi_monthly` and the static chart, because the Tableau version repeated the monthly values.
 
 ## Going deeper
 
