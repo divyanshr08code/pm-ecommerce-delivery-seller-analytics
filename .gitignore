@@ -15,4 +15,6 @@ kaggle.json
 
 # Tableau local files can embed data
 *.twbx
+*.twb
+*.twbr
 *.hyper

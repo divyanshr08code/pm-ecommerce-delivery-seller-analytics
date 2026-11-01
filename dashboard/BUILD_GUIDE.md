@@ -1,6 +1,6 @@
 # Dashboard build guide
 
-**Status: not built.** Tableau is not installed on the build machine and publishing needs your own account. All the data is
+**Status: built locally, not published.** `scripts/build_tableau_workbook.py` writes the workbook, which was opened and checked in Tableau 2026.3. `dashboard/dashboard.png` is a screenshot. The colour scale beside the filters was placed by hand in Tableau, so a regenerated workbook will not include it. The manual steps below are the equivalent build by hand.
 ready. The steps below are the manual part. The formulas here were not tested in Tableau, so check them against the tile values below.
 
 ## What is already generated
@@ -14,11 +14,9 @@ ready. The steps below are the manual part. The formulas here were not tested in
 
 `dash_fact` covers Jan 2017 to Aug 2018 and has no order or customer ids. It has 11,807 rows.
 
-## What you must do yourself
+## Generate it
 
-1. Install Tableau Public (free) and create an account.
-2. Build the sheets below.
-3. Publish, take screenshots to `dashboard/`, and add the link to the README.
+Run `python scripts/build_tableau_workbook.py` and open the file it writes in `dashboard/`. The workbook is not committed, because it stores this computer's folder path. Run the script again after moving the folder.
 
 ## Step by step
 
@@ -46,20 +44,16 @@ Multiple Share     = SUM([late_multiple]) / SUM([late])
 
 Always divide two SUMs. Never average a pre-computed rate: that would give a small state the same weight as SP.
 
-Rolling 3-month breach rate, computed along `purchase_month`:
-
-```text
-Rolling Breach 3M = WINDOW_SUM(SUM([late]), -2, 0) / WINDOW_SUM(SUM([delivered]), -2, 0)
-```
+**Rolling rate left out.** As a table calculation in the generated workbook it repeated the monthly values, found by comparing with the SQL. The correct rolling rate is in `rpt_kpi_monthly`.
 
 ### 3. Sheets
 
 | Sheet | Build |
 |---|---|
 | KPI tiles | One text sheet each: SUM(orders), Promise Accuracy, Avg Delivery Days, Defect Proxy |
-| Monthly trend | `purchase_month` (continuous month) on Columns; Breach Rate and Rolling Breach 3M on Rows, shared axis (dual lines, one scale) |
+| Monthly trend | `purchase_month` (continuous month) on Columns; Breach Rate on Rows |
 | State heatmap | `state_name` on Detail of a filled map, Breach Rate as colour, one-hue sequential. Tooltip: delivered, late. Small states are noisy, so show `delivered` |
-| Stage contribution | `customer_state` on Rows; Measure Names on Colour with the four shares; stacked bars. Sort by SUM(late); show the top 10 |
+| Stage contribution | `customer_state` on Rows; Measure Names on Colour with the four shares; stacked bars. Sort by SUM(late); show all states, because a top-10 filter can go empty when a small state is selected |
 | Seller scorecard | From `dash_seller_scorecard`: table of id, state, delivered, breach rate, Wilson low, dispatch miss, avg days late, defect rate, excess late. Sort by `worst_rank` |
 
 ### 4. Dashboard
@@ -82,7 +76,7 @@ With no filters on, tiles must show:
 
 These are from the dashboard window, so they can differ slightly from the full-data headline (all listed in `docs/RESULTS.md`). If a tile differs, a formula is wrong.
 
-### 6. Publish
+### 6. Publish (optional, not done)
 
 File > Save to Tableau Public. Tableau Public makes the workbook and its data public. The extract holds only aggregated counts, and the seller
 table has shortened anonymised ids. Keep the licence credit in the caption: "Data: Brazilian E-Commerce Public Dataset by Olist, CC BY-NC-SA 4.0."
