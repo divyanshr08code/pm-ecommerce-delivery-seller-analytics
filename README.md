@@ -53,18 +53,6 @@ A Tableau dashboard with tiles, trend, state map, cause breakdown, seller scorec
 
 SQL (DuckDB) is the primary deliverable. Python is used only for loading, charts and tests. Headline numbers are re-derived in pandas from the raw CSVs in `tests/test_project.py`.
 
-## Reproduce
-
-Needs Python `3.12`. Run from the project folder. This downloads the data, rebuilds everything, runs all tests and audits the numbers in the docs:
-
-```bash
-pip install duckdb==2.0.0 matplotlib==3.11.2 numpy==2.5.4 pandas==3.1.0 pytest==9.2.0 scipy==1.18.1
-```
-
-```bash
-python scripts/download_data.py && python scripts/run_sql.py && python scripts/explain_plan.py && python scripts/build_results.py && python scripts/make_charts.py && python -m pytest -q tests && python scripts/audit_docs.py
-```
-
 ## Data and licences
 
 - **Data:** [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce), on Kaggle, licensed CC BY-NC-SA 4.0. Raw files are not stored here. The tables in `outputs/` are derived from it and carry the same licence: non-commercial use, with attribution, and share-alike.
